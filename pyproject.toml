@@ -5,9 +5,13 @@ build-backend = "hatchling.build"
 [project]
 name = "fermentation"
 version = "0.1.0"
-
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1,<2",
+]
 
 # tests
+[project.optional-dependencies]
 test = [
     "pytest>=7,<8",
 ]
